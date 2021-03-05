@@ -20,8 +20,8 @@ public class Lab2Optional {
 
         problemInstance.leastCostMethod();
 
-        for(Auxiliary t: problemInstance.solutions){
-            System.out.println(t);
+        for(Auxiliary auxiliary: problemInstance.solutions){
+            System.out.println(auxiliary);
         }
 
         System.out.println("Cost = " + problemInstance.getSolution());
