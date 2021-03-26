@@ -1,0 +1,4 @@
+List of items : 
+#foreach ($item in $items)
+	<br>$item
+#end
