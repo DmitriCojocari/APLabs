@@ -11,8 +11,8 @@ import java.util.stream.IntStream;
 
 public class GameManager {
 
-    List<Player> players = new ArrayList<>();
-    Board board;
+    private List<Player> players = new ArrayList<>();
+    private Board board;
     private int currentPlayerPosition;
 
     public GameManager(int nrOfPlayers) {

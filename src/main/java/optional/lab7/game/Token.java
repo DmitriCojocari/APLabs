@@ -3,8 +3,8 @@ package optional.lab7.game;
 import javafx.util.Pair;
 
 public class Token {
-    Pair<Integer, Integer> tokenPair;
-    Integer tokenValue;
+    private Pair<Integer, Integer> tokenPair;
+    private Integer tokenValue;
 
     public Token(Pair<Integer, Integer> tokenPair, Integer tokenValue) {
         this.tokenPair = tokenPair;
