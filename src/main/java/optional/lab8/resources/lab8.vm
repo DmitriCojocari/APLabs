@@ -1,0 +1,4 @@
+List of movies : 
+#foreach ($movie in $movies)
+	<br>$movie
+#end

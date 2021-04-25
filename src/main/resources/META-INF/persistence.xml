@@ -1,0 +1,22 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+  <persistence-unit name="Lab9_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <!-- Entity classes -->
+    <class>compulsory.lab9.model.Movie</class>
+    <class>compulsory.lab9.model.Genre</class>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+      <property name="javax.persistence.jdbc.user" value="student" />
+      <property name="javax.persistence.jdbc.password" value="student" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+      <property name="show_sql" value="true"/>
+      <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.use_sql_comments" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
